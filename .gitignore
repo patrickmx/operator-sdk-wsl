@@ -1,0 +1,13 @@
+.idea
+**swp
+**tar
+
+wslhome/*
+!wslhome/.keep
+
+exports/*
+!exports/.keep
+
+**/crc-credentials.txt
+crc-creds
+
