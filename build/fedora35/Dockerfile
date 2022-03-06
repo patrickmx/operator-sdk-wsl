@@ -7,6 +7,7 @@ git \
 ansible \
 helm \
 podman \
+buildah \
 podman-compose \
 podman-docker \
 podman-plugins \
@@ -39,6 +40,10 @@ source-to-image \
 net-tools \
 pgp-tools \
 gcc \
+openssl \
+openssl-devel \
+slirp4netns \
+fuse-overlayfs \
 && dnf clean all
 
 RUN groupadd -g 1003 wslg

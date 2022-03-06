@@ -8,6 +8,9 @@ if [ "$(whoami)" == "root" ]; then
   grep crc /etc/hosts | awk -v newip=${HOSTIPRESOLVCONF} '{ $1=newip; print}' >> /etc/hosts.tmp
   mv /etc/hosts.tmp /etc/hosts
 
+  chmod 4755 /usr/bin/newgidmap
+  chmod 4755 /usr/bin/newuidmap
+
 else
 
 sudo bash /boot-command.bash
