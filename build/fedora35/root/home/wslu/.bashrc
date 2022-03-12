@@ -35,7 +35,7 @@ export HISTSIZE=10000
 
 export PS1="?$? \u@\h [\$(date +%k:%M:%S)] \w> "
 
-exprot REGISTRY_AUTH_FILE="~/.podmanauth"
+export REGISTRY_AUTH_FILE="~/.podmanauth"
 
 alias boot='bash /boot-command.bash'
 boot
