@@ -64,5 +64,6 @@ RUN chown -R wslu:wslg /home/wslu
 USER wslu
 
 RUN bash /home/wslu/install-operator-sdk.bash
+RUN bash /home/wslu/install-golangci-lint.bash
 
 WORKDIR /home/wslu
